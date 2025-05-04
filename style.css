@@ -1,0 +1,150 @@
+/* Font base */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #f5f5f5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Container principale */
+  .container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  /* Header */
+  header h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #f5f5f5;
+  }
+  
+  header h1 span {
+    color: #d4af37; /* giallo ocra */
+  }
+  
+  /* Selettori lingua */
+  .language-selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+  }
+  
+  select {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1f1f1f;
+    color: #f5f5f5;
+    outline: none;
+    transition: transform 0.1s ease;
+  }
+  
+  select:focus {
+    border: 1px solid #d4af37;
+  }
+  
+  /* Pulsante switch */
+  #switch-btn {
+    background-color: #d4af37;
+    color: #121212;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 14px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+  }
+  
+  #switch-btn:active {
+    transform: scale(1.15);
+  }
+  
+  /* Area di testo */
+  .text-areas {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 150px;
+    resize: none;
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 12px;
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+    border: 1px solid #333;
+    outline: none;
+    transition: border 0.2s;
+  }
+  
+  textarea:focus {
+    border: 1px solid #d4af37;
+  }
+  
+  /* Pulsanti azioni */
+  .actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .actions button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #d4af37;
+    color: #121212;
+    font-weight: bold;
+    transition: transform 0.1s ease, box-shadow 0.2s;
+  }
+  
+  .actions button:active {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #d4af37aa;
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+    color: #999;
+  }
+  
+  /* Piccole modifiche per schermi molto piccoli */
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 1.8rem;
+    }
+  
+    select {
+      padding: 8px;
+      max-width: 100%;
+    }
+  
+    #switch-btn {
+      width: 40px;
+      height: 40px;
+      font-size: 1rem;
+    }
+  
+    .actions button {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+  }

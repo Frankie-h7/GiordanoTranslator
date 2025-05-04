@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GiordanoTranslator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Giordano<span>Translator</span></h1>
+    </header>
+
+    <main>
+      <div class="language-selection">
+        <select id="from-lang">
+          <option value="en">Inglese</option>
+          <option value="es">Spagnolo</option>
+          <option value="fr">Francese</option>
+          <option value="it" selected>Italiano</option>
+          <option value="de">Tedesco</option>
+          <option value="zh">Cinese</option>
+          <option value="ja">Giapponese</option>
+          <option value="ar">Arabo</option>
+          <option value="ru">Russo</option>
+        </select>
+
+        <button id="switch-btn" title="Inverti lingue">⇄</button>
+
+        <select id="to-lang">
+          <option value="en">Inglese</option>
+          <option value="es">Spagnolo</option>
+          <option value="fr">Francese</option>
+          <option value="it">Italiano</option>
+          <option value="de">Tedesco</option>
+          <option value="zh">Cinese</option>
+          <option value="ja">Giapponese</option>
+          <option value="ar">Arabo</option>
+          <option value="ru" selected>Russo</option>
+        </select>
+      </div>
+
+      <div class="text-areas">
+        <textarea id="input-text" placeholder="Inserisci il testo..."></textarea>
+        <textarea id="output-text" placeholder="Traduzione..." readonly></textarea>
+      </div>
+
+      <div class="actions">
+        <button id="translate-btn">Traduci</button>
+        <button id="clear-btn">Cancella</button>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 GiordanoTranslator</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
